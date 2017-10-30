@@ -1,0 +1,204 @@
+<h1 class="section-title">Listing episodes</h1>
+<div class="container">
+  <div class="row episode">
+      <div class="col-3 image-container">
+        <img src="https://reactjs.org/logo-og.png" class='episode_img'/>
+      </div>
+      <div class="col-9">
+      <div class="row firstline-title">
+        
+        Title of the asd asd
+       
+        </div>
+        <div class="row meta-info">
+        
+          <div class="col-md-12">
+          July 24, 2017  <%== "&nbsp;"*3%> | <%== "&nbsp;"*3%>   
+          
+          Prabakar  <%== "&nbsp;"*3%> | <%== "&nbsp;"*3%>  
+         
+          Tamil  <%== "&nbsp;"*3%> | <%== "&nbsp;"*3%>  
+         
+          7:00 
+          </div>
+        </div>
+        <div class="row desc">
+        asd asd asodi jasodi jasodij asodij asodij
+        asd oaisdh aosidh saoidh aoisd aos idhaoisd 
+        asdo iasd oisajd ioasjd osaijd aoisjd oaisjd 
+        </div>
+         <div class="row audio">
+          <audio src="praba.mp4" preload="auto" />
+
+         </div>
+      </div>
+  </div>
+
+
+
+<div class="row episode">
+      <div class="col-3">
+        <img src="/assets/demo-screen-1.jpg" class='episode_img'/>
+      </div>
+      <div class="col-9">
+      <div class="row firstline-title">
+        
+        Title of the asd asd
+       
+        </div>
+        <div class="row meta-info">
+        
+          <div class="col-md-12">
+          July 24, 2017  <%== "&nbsp;"*3%> | <%== "&nbsp;"*3%>   
+          
+          Prabakar  <%== "&nbsp;"*3%> | <%== "&nbsp;"*3%>  
+         
+          Tamil  <%== "&nbsp;"*3%> | <%== "&nbsp;"*3%>  
+         
+          7:00 
+          </div>
+        </div>
+        <div class="row desc">
+        asd asd asodi jasodi jasodij asodij asodij
+        asd oaisdh aosidh saoidh aoisd aos idhaoisd 
+        asdo iasd oisajd ioasjd osaijd aoisjd oaisjd 
+        </div>
+         <div class="row audio">
+          <audio src="praba.mp4" preload="auto" />
+
+         </div>
+      </div>
+  </div>
+
+
+</div>
+
+<script>
+  audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });
+</script>
+
+<style>
+.image-container{
+  text-align: left;
+}
+.audio{
+  margin-top: 20px; 
+  padding-left: 10px; 
+}
+.desc{
+  text-align: left;
+    padding-top: 17px;
+    padding-left: 10px;
+    padding-right: 20px;
+    color: #263669;
+}
+.firstline-title{
+   text-align: left;
+}
+.meta-info{
+  text-align: left;
+}
+.episode_img{
+ height: 200px;
+    width: 244px;
+  }
+.section-title{
+  color: #263669;
+    font-size: 36px;
+    font-weight: 700;
+
+}
+.episode {
+  margin-bottom: 20px;
+  padding: 20px;
+  position: relative;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+/*.audiojs {
+    display: table;
+    width: 100%;
+    height: 34px;
+
+    .play-pause, .scrubber, .time {
+        display: table-cell;
+        float: none;
+        height: auto;
+        vertical-align: middle;
+    }
+
+    .play-pause {
+        padding: 0 6px;
+
+        > p {
+            margin: 0;
+            padding: 0;
+            height: 26px;
+        }
+    }
+
+    .scrubber {
+        width: 99%;
+        margin: 0;
+        padding: 0;
+
+        > div {
+            position: relative;
+            margin: 0;
+
+            &.progress {
+                z-index: 2;
+            }
+
+            &.loaded {
+                margin-top: -14px;
+                z-index: 1;
+            }
+        }
+    }
+
+    .time {
+        line-height: normal;
+        margin: 0;
+        padding: 0 12px;
+        width: auto;
+    }
+}
+*/.bg-primary {
+    
+    background: white !important;
+}
+</style>
+<!-- <table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Desc</th>
+      <th>Audio</th>
+      <th>Language</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @episodes.each do |episode| %>
+      <tr>
+        <td><%= episode.title %></td>
+        <td><%= episode.desc %></td>
+        <td><%= episode.audio %></td>
+        <td><%= episode.language %></td>
+        <td><%= link_to 'Show', episode %></td>
+        <td><%= link_to 'Edit', edit_episode_path(episode) %></td>
+        <td><%= link_to 'Destroy', episode, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Episode', new_episode_path %>
+ -->
